@@ -1,0 +1,177 @@
+{
+  "project_title": "MO LABS - B2B SaaS Operations Platform",
+  "theme": "Dark Modern B2B SaaS",
+  "brand_identity": {
+    "name": "MO LABS",
+    "tagline": "Software made you a data entry clerk. We're fixing that.",
+    "ethos": "Anti-Admin Drag / Zero-UI / High-Impact B2B Automation",
+    "tone": "Authoritative, Precise, Operator-Centric, Kinetic"
+  },
+  "colors": {
+    "background_primary": "#0A0E1A",
+    "background_secondary": "#111827",
+    "background_card": "#161F33",
+    "background_card_hover": "#1E293B",
+    "border_subtle": "#1E293B",
+    "border_emerald_glow": "rgba(16, 185, 129, 0.3)",
+    "primary_emerald": "#10B981",
+    "primary_emerald_hover": "#059669",
+    "primary_emerald_light": "#34D399",
+    "accent_glow": "#10B98126",
+    "text_main": "#F9FAFB",
+    "text_muted": "#9CA3AF",
+    "text_dark_subtle": "#6B7280",
+    "gradient_hero": "radial-gradient(ellipse at top, rgba(16, 185, 129, 0.15) 0%, rgba(10, 14, 26, 0.95) 70%)",
+    "gradient_emerald_border": "linear-gradient(135deg, rgba(16, 185, 129, 0.5) 0%, rgba(255, 255, 255, 0.05) 100%)"
+  },
+  "typography": {
+    "heading_font": "Plus Jakarta Sans, sans-serif",
+    "body_font": "Inter, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight",
+    "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white",
+    "card_h3": "text-xl font-semibold text-white",
+    "body_text": "text-base text-gray-300 leading-relaxed",
+    "mono_badge": "font-mono text-xs uppercase tracking-widest text-emerald-400 bg-emerald-950/60 border border-emerald-800/50 px-3 py-1 rounded-full inline-block"
+  },
+  "layout_and_grid": {
+    "container_max_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "hero_padding": "pt-32 pb-20 md:pt-40 md:pb-28",
+    "section_padding": "py-20 md:py-28",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+    "pipeline_grid": "grid grid-cols-1 md:grid-cols-3 gap-8 relative"
+  },
+  "components_and_interactions": {
+    "header": {
+      "style": "fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#0A0E1A]/80 border-b border-gray-800/60",
+      "nav_links": [
+        { "name": "Products", "type": "dropdown", "items": ["Clarity Dispatch", "LinkedIn Content Engine", "Product Catalogue", "Custom Inventory"] },
+        { "name": "Company", "type": "link", "path": "/company" },
+        { "name": "Resources", "type": "dropdown", "items": ["Trust & Security", "Legal Hub"] }
+      ],
+      "cta": "Request Beta Access (Triggers Modal Form)"
+    },
+    "beta_access_modal": {
+      "type": "Shadcn Dialog Component with Custom Glassmorphism Styling",
+      "fields": ["Name", "Email", "Company", "Message"],
+      "action": "POST to backend API /api/contact and show Toast notification via Sonner"
+    },
+    "contact_form_section": {
+      "description": "Embedded high-contrast dark contact card on page bottoms with live validation, submit state, and email trigger.",
+      "fields": ["Name", "Email", "Company", "Message"]
+    },
+    "cards": {
+      "style": "bg-[#161F33]/80 border border-gray-800 rounded-xl p-6 transition-all duration-300 hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.15)] group relative overflow-hidden",
+      "interactive_indicator": "Top-right subtle emerald gradient accent line"
+    },
+    "interactive_elements": {
+      "audio_wave_demo": "Interactive simulator for Clarity Dispatch showing voice waveform turning into structured CRM JSON payload",
+      "linkedin_formatter": "Interactive preview box demonstrating zero-jargon post formatting in 120s",
+      "pricing_calculator": "Clear breakdown tables with $350 setup + $29/mo and $2,000 setup + $200/mo options"
+    }
+  },
+  "pages": {
+    "homepage": {
+      "path": "/",
+      "sections": [
+        "Hero Section with tagline + CTA",
+        "The Arsenal (4 product bento grid)",
+        "Integration Ecosystem (WhatsApp, HubSpot, Salesforce, Notion, Slack logo grid)",
+        "Social Proof ('Built for scale. Designed for operators.')",
+        "Universal Contact Form Section"
+      ]
+    },
+    "clarity_dispatch": {
+      "path": "/clarity-dispatch",
+      "sections": [
+        "Hero ('Speak your operations. We'll update the CRM.')",
+        "3-Step Pipeline (Voice Input -> AI Structuring -> Database Sync)",
+        "Features Grid (Security, Speed, Offline capabilities, Multi-language)",
+        "Field Sales Reps Use Case Spotlight",
+        "Contact Form"
+      ]
+    },
+    "linkedin_engine": {
+      "path": "/linkedin-engine",
+      "sections": [
+        "Hero ('Turn raw thoughts into scannable, high-impact posts in 120 seconds.')",
+        "3-Step Pipeline (Raw Input -> Zero-Jargon Formatting -> Instant Publishing)",
+        "Features Grid (Radical Scannability, Tone Controls, Mobile Dispatch)",
+        "Interactive Post Generator Simulation",
+        "Contact Form"
+      ]
+    },
+    "product_catalogue": {
+      "path": "/product-catalogue",
+      "sections": [
+        "Hero ('Interactive product showcases with zero multi-tab SaaS chaos.')",
+        "Features (Fast Loading, Mobile Optimization, Instant Search, Direct CRM Sync)",
+        "Transparent Pricing ($350 setup + $29/mo)",
+        "Contact Form"
+      ]
+    },
+    "custom_inventory": {
+      "path": "/custom-inventory",
+      "sections": [
+        "Hero ('Tailored facility & inventory tracking built for lean operators.')",
+        "Features (Asset tracking, low-stock alerts, zero-friction entry)",
+        "Transparent Pricing ($2,000 setup + $200/mo)",
+        "Contact Form"
+      ]
+    },
+    "company": {
+      "path": "/company",
+      "sections": [
+        "Manifesto: Killing Administrative Drag",
+        "The Zero-UI Philosophy & Death of the Dashboard",
+        "Founders / Team Spotlight",
+        "Contact Form"
+      ]
+    },
+    "security": {
+      "path": "/security",
+      "sections": [
+        "Hero ('Enterprise-Grade Security & Zero Data Retention.')",
+        "Zero Data Retention API Models",
+        "Encryption in Transit (TLS 1.3) and at Rest (AES-256)",
+        "AWS/GCP Hosting Regions & Infrastructure Compliance"
+      ]
+    },
+    "legal": {
+      "path": "/legal",
+      "sections": [
+        "Tabbed Legal Hub (Privacy Policy, Terms of Service, DPA GDPR/SOC2)",
+        "No model training guarantee, zero data sale policy"
+      ]
+    }
+  },
+  "image_urls": {
+    "tech_server_ops": "https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "night_developer": "https://images.pexels.com/photos/20291643/pexels-photo-20291643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "warehouse_manager": "https://images.pexels.com/photos/4484042/pexels-photo-4484042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "warehouse_aisle": "https://images.pexels.com/photos/4487365/pexels-photo-4487365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "executive_desk": "https://images.pexels.com/photos/19747906/pexels-photo-19747906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "testing_and_data_ids": {
+    "rule": "Every interactive and key informational element MUST include data-testid",
+    "examples": {
+      "nav_home": "nav-link-home",
+      "nav_products_dropdown": "nav-dropdown-products",
+      "beta_modal_trigger": "btn-request-beta-access",
+      "beta_modal_submit": "btn-beta-submit",
+      "contact_name_input": "input-contact-name",
+      "contact_email_input": "input-contact-email",
+      "contact_company_input": "input-contact-company",
+      "contact_message_input": "input-contact-message",
+      "contact_submit_btn": "btn-contact-submit"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build a responsive multi-page React application with client-side routing (React Router) matching all 8 routes.",
+    "Implement shared Header and Footer across all pages with a z-50 sticky header.",
+    "Ensure 'Request Beta Access' CTA opens a full interactive dialog with data-testid attributes.",
+    "Ensure all contact forms (modal and bottom sections) call the backend POST /api/contact endpoint and trigger Sonner toasts.",
+    "Apply high-contrast emerald green accents on deep navy/charcoal dark theme.",
+    "Ensure all buttons, inputs, links, and cards have explicit hover/focus state contrast."
+  ]
+}
