@@ -1,0 +1,24 @@
+# M.O. LABS
+
+> Building operating systems for the modern world — voice-first, zero-UI infrastructure for lean B2B teams.
+> Methodology: RESEARCH. BUILD. OPERATE. TRANSFORM.
+
+## Technical Pillars
+- AI & Advanced Technologies
+- Product Engineering
+- Systems Thinking
+- Scalable Impact
+
+## Products
+- Voice-to-Workspace Sync: speak your notes aloud, auto-organized and logged into your Notion or workspace
+- LinkedIn Post Generator: pick a topic or event, get a structured publish-ready LinkedIn post
+- Digital Catalog Builder: clean, instantly-loading digital menus and product catalogs (contact for pricing)
+- Custom Business Automations: integrated software for your entire operation, e.g. custom inventory management (contact for pricing)
+
+## Company
+- /company — Manifesto: killing administrative drag, the Zero-UI philosophy
+- /security — Zero data retention API models, TLS 1.3 / AES-256, AWS & GCP regions
+- /legal — Privacy policy, terms of service, data processing agreement (GDPR/SOC2)
+
+## Contact
+- Beta access requests via the contact form on any page
